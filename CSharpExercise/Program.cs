@@ -18,6 +18,7 @@ namespace CSharpExercise
             Console.WriteLine("4. 委派練習3(多點傳送委派) - 馬戲團(多隻動物版)");
             Console.WriteLine("5. 委派練習4(Action 委派) - 馬戲團");
             Console.WriteLine("6. 委派練習5(Action 委派(傳參數)) - 馬戲團");
+            Console.WriteLine("7. 委派練習6(Func 委派) - 馬戲團");
 
 
             Console.WriteLine("請選擇題目:");
@@ -63,6 +64,12 @@ namespace CSharpExercise
 
                     DelegateExercise5 delegateExercise5 = new DelegateExercise5();
                     delegateExercise5.Main();
+                    break;
+                case "7":
+                    Console.WriteLine("題目6 start ...");
+
+                    DelegateExercise6 delegateExercise6 = new DelegateExercise6();
+                    delegateExercise6.Main();
                     break;
             }
 
