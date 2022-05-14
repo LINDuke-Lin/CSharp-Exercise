@@ -30,14 +30,12 @@ namespace CSharpExercise.DelegateExercise
         /// <summary>
         /// 定義委派
         /// </summary>
-        /// <param name="name">姓名</param>
         private delegate void Animal();
 
         /// <summary>
         /// 定義函式
         /// </summary>
         /// <param name="animal">動物的委派</param>
-        /// <param name="name">動物名字</param>
         private static void RunCircus(Animal animal)
         {
             animal();
