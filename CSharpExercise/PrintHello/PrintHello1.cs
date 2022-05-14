@@ -10,7 +10,7 @@ namespace CSharpExercise.PrintHello
     public class PrintHello1
     {
         // 定義要印的陣列
-        private string[] StrArry = new string[] { "H", "e", "l", "l", "o" };
+        private string[] StrAry = new string[] { "H", "e", "l", "l", "o" };
 
         /// <summary>
         /// 主程式
@@ -29,8 +29,7 @@ namespace CSharpExercise.PrintHello
                 // 印出每行的文字
                 for (int j = 0; j < i; j++)
                 {
-                    //Console.Write(tempCount);
-                    Console.Write(StrArry[tempCount % 5]);
+                    Console.Write(StrAry[tempCount % 5]);
                     tempCount++;
                 }
                 // 換下一行
