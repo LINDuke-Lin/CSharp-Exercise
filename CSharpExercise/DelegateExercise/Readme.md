@@ -7,6 +7,7 @@
 - [委派練習4](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%924)
 - [委派練習5](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%925)
 - [委派練習6](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%926)
+- [委派練習7](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%927)
 
 ## 委派練習1
 - [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise1.cs)
@@ -206,7 +207,7 @@
 
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
 
-## 委派練習4
+## 委派練習6
 ### Func<T> 泛型委派 -> 有回傳值
 - [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise6.cs)
 
@@ -215,13 +216,14 @@
 - <T> 設定回傳值型態
 - Func<string> -> 可以直接傳入函式
 ```CSharp
-	/// <summary>
+    /// <summary>
     /// 定義函式
     /// </summary>
     /// <param name="animal">動物的委派</param>
-    private static void RunCircus(Action animal)
+    private static void RunCircus(Func<string> animal)
     {
-        animal();
+        string sound = animal();
+        Console.WriteLine(sound);
     }
 ```
 
@@ -230,6 +232,38 @@
 - 無須做任何實例化
 ```CSharp
  RunCircus(Dog);
+```
+
+[回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
+
+## 委派練習7
+### Func<T,TResult> 泛型委派 -> 有回傳值
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise7.cs)
+
+1. 定義函式
+- 傳入值設定為 Func<int, string>
+- <T,TResult> 
+	- T -> 傳入參數  
+	- TResult -> 設定回傳值型態
+- Func<string> -> 可以直接傳入函式
+```CSharp
+    /// <summary>
+    /// 定義函式
+    /// </summary>
+    /// <param name="animal">動物的委派</param>
+    private static void RunCircus(Func<int, string> animal, int age)
+    {
+        string sound = animal(age);
+        Console.WriteLine(sound);
+    }
+```
+
+2. 呼叫馬戲團
+- 直接傳入狗函式
+- 無須做任何實例化
+- 帶入年紀
+```CSharp
+  RunCircus(Dog, 5);
 ```
 
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
