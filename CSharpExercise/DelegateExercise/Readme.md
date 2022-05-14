@@ -241,10 +241,10 @@
 - [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise7.cs)
 
 1. 定義函式
-- 傳入值設定為 Func<int, string>
-- <T,TResult> 
-	- T -> 傳入參數  
-	- TResult -> 設定回傳值型態
+- 傳入值設定為 `Func<int, string>`
+- `<T,TResult>` 
+	- `T` -> 傳入參數  
+	- `TResult` -> 設定回傳值型態
 - Func<string> -> 可以直接傳入函式
 ```CSharp
     /// <summary>
