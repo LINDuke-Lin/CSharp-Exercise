@@ -1,5 +1,8 @@
 # 委派(Delegate)
 
+## 目錄:
+- [委派練習1](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%921)
+
 ## 委派練習1
 
 1. 定義要使用的委派
@@ -53,3 +56,5 @@
 ```CSharp
   RunCircus(deleDog, "小狗");
 ```
+
+[回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
