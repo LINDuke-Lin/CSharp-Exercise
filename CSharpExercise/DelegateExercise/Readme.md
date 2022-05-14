@@ -129,3 +129,15 @@
 ```
 
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
+
+## 委派練習3
+### 多點傳送委派(MulticastDelegate)
+
+1. 使用`+=`進行註冊
+```CSharp
+	Animal deleAnimal = new Animal(Dog);
+
+    deleAnimal += new Animal(Cat);
+    deleAnimal += new Animal(Duck);
+    deleAnimal += new Animal(Chicken);
+```
