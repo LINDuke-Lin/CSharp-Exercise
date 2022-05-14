@@ -6,6 +6,7 @@
 - [委派練習3](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%923)
 
 ## 委派練習1
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise1.cs)
 
 1. 定義要使用的委派
 - 使用`delegate`關鍵字
@@ -62,6 +63,7 @@
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
 
 ## 委派練習2
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise2.cs)
 
 1. 新增各種動物
 ```CSharp
@@ -133,6 +135,7 @@
 
 ## 委派練習3
 ### 多點傳送委派(MulticastDelegate)
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise3.cs)
 
 1. 使用`+=`進行註冊
 ```CSharp
