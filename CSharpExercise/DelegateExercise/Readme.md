@@ -4,6 +4,8 @@
 - [委派練習1](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%921)
 - [委派練習2](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%922)
 - [委派練習3](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%923)
+- [委派練習4](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%924)
+- [委派練習5](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BE%E7%B7%B4%E7%BF%925)
 
 ## 委派練習1
 - [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise1.cs)
@@ -144,6 +146,61 @@
     deleAnimal += new Animal(Cat);
     deleAnimal += new Animal(Duck);
     deleAnimal += new Animal(Chicken);
+```
+
+[回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
+
+## 委派練習4
+### Acton 泛型委派
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise4.cs)
+
+1. 定義函式
+- 傳入值設定為 Action
+- Action -> 可以直接傳入函式
+```CSharp
+	/// <summary>
+    /// 定義函式
+    /// </summary>
+    /// <param name="animal">動物的委派</param>
+    private static void RunCircus(Action animal)
+    {
+        animal();
+    }
+```
+
+2. 呼叫馬戲團
+- 直接傳入狗函式
+- 無須做任何實例化
+```CSharp
+ RunCircus(Dog);
+```
+
+[回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
+
+## 委派練習5
+### Acton 泛型委派 - 傳參數
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise4.cs)
+
+1. 定義函式
+- 傳入值設定為 Action<string>
+- <T> 之中帶入要傳遞的變數型別
+- Action -> 可以直接傳入函式
+```CSharp
+    /// <summary>
+    /// 定義函式
+    /// </summary>
+    /// <param name="animal">動物的委派</param>
+    private static void RunCircus(Action<string> animal, string name)
+    {
+        animal(name);
+    }
+```
+
+2. 呼叫馬戲團
+- 直接傳入狗函式
+- 無須做任何實例化
+```CSharp
+ RunCircus(Dog, "狗狗");
 ```
 
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
