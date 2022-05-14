@@ -66,7 +66,7 @@
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise#%E5%A7%94%E6%B4%BEdelegate)
 
 ## 委派練習2
-- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise2.cs)
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise2.cs)
 
 1. 新增各種動物
 ```CSharp
@@ -138,7 +138,7 @@
 
 ## 委派練習3
 ### 多點傳送委派(MulticastDelegate)
-- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise3.cs)
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise3.cs)
 
 1. 使用`+=`進行註冊
 ```CSharp
@@ -153,7 +153,7 @@
 
 ## 委派練習4
 ### Acton 泛型委派
-- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise4.cs)
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise4.cs)
 
 1. 定義函式
 - 傳入值設定為 Action
@@ -180,7 +180,7 @@
 
 ## 委派練習5
 ### Acton 泛型委派 - 傳參數
-- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise5.cs)
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise5.cs)
 
 1. 定義函式
 - 傳入值設定為 Action<string>
@@ -208,7 +208,7 @@
 
 ## 委派練習4
 ### Func<T> 泛型委派 -> 有回傳值
-- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/delegateExercise6.cs)
+- [程式碼](https://github.com/LINDuke-Lin/CSharp-Exercise/blob/main/CSharpExercise/DelegateExercise/DelegateExercise6.cs)
 
 1. 定義函式
 - 傳入值設定為 Func<string>
