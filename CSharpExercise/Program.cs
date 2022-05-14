@@ -1,4 +1,5 @@
-﻿using CSharpExercise.PrintHello;
+﻿using CSharpExercise.EventDemo;
+using CSharpExercise.PrintHello;
 using System;
 
 namespace CSharpExercise
@@ -9,6 +10,11 @@ namespace CSharpExercise
         {
             Console.WriteLine("題目:");
             Console.WriteLine("1. 輸入n 印出 Hello 圖型 第一版");
+
+            Console.WriteLine("-- 委派 --");
+            Console.WriteLine("2. 委派練習1 - 馬戲團");
+
+
             Console.WriteLine("請選擇題目:");
 
             string whitchOne = Console.ReadLine();
@@ -22,6 +28,12 @@ namespace CSharpExercise
                     int num1 = Convert.ToInt32(Console.ReadLine());
                     PrintHello1 printHello = new PrintHello1();
                     printHello.Main(num1);
+                    break;
+                case "2":
+                    Console.WriteLine("題目2 start ...");
+
+                    DelegateExercise1 delegateExercise1 = new DelegateExercise1();
+                    delegateExercise1.Main();
                     break;
             }
 

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CSharpExercise.PrintHello
 {
@@ -29,6 +27,7 @@ namespace CSharpExercise.PrintHello
                 // 印出每行的文字
                 for (int j = 0; j < i; j++)
                 {
+                    //取餘
                     Console.Write(StrAry[tempCount % 5]);
                     tempCount++;
                 }
