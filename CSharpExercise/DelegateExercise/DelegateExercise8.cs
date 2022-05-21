@@ -2,7 +2,7 @@
 
 namespace CSharpExercise.DelegateExercise
 {
-    public class DelegateExercise7
+    public class DelegateExercise8
     {
 
         /// <summary>
@@ -10,6 +10,8 @@ namespace CSharpExercise.DelegateExercise
         /// </summary>
         public void Main()
         {
+            Func<int, string> Dog = (int age) => { return $"汪汪!{age.ToString()} 歲"; };
+
             RunCircus(Dog, 5);
         }
 
@@ -22,15 +24,6 @@ namespace CSharpExercise.DelegateExercise
         {
             string sound = animal(age);
             Console.WriteLine(sound);
-        }
-
-        /// <summary>
-        /// 小狗函式
-        /// </summary>
-        /// <returns></returns>
-        private static string Dog(int age)
-        {
-            return $"汪汪!{age.ToString()} 歲";            
         }
     }
 }
