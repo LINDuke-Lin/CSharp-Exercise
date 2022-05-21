@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpExercise.EventDemo
 {
-    class EventExercise2
+    public class EventExercise2
     {
     }
 }

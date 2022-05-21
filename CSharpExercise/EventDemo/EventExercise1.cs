@@ -9,9 +9,12 @@ namespace CSharpExercise.EventDemo
         /// </summary>
         public void Main()
         {
+            // 1. 實例化 狗類別
             Dog dog = new Dog();
+            // 2. 實例化 事件接收者
             Host host = new Host(dog);
 
+            // 3. 事件觸發
             dog.OnAlarm();
         }
 
