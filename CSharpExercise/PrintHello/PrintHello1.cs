@@ -14,7 +14,7 @@ namespace CSharpExercise.PrintHello
         /// 主程式
         /// </summary>
         public void Main(int n)
-        {
+        {            
             // 計算 n + 5
             int total = n + 5;
 
