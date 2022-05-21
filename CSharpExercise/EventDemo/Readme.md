@@ -1,5 +1,9 @@
 # Event(事件)
 
+## 目錄:
+- [事件練習1 - delegate & event](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#%E4%BA%8B%E4%BB%B6%E7%B7%B4%E7%BF%921)
+
+
 ## 事件練習1
 - `delegate` & `event`
 
@@ -87,3 +91,6 @@
 	    dog.OnAlarm();
 	}
 ```
+
+
+[回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#event%E4%BA%8B%E4%BB%B6)
