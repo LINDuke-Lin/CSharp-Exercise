@@ -12,4 +12,4 @@
 - [練習](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/DelegateExercise)
 
 ### 事件練習: 
-- [練習](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo)
+- [練習](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/main/CSharpExercise/EventDemo)
