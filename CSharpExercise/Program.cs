@@ -22,6 +22,7 @@ namespace CSharpExercise
             Console.WriteLine("8. 委派練習7(Func 委派(傳參數)) - 馬戲團");
             Console.WriteLine("9. 事件練習");
             Console.WriteLine("10. 事件練習 - 泛型委派");
+            Console.WriteLine("11. 事件練習 - 泛型委派(匿名函式)");
 
 
             Console.WriteLine("請選擇題目:");
@@ -91,6 +92,12 @@ namespace CSharpExercise
 
                     EventExercise2 eventExercise2 = new EventExercise2();
                     eventExercise2.Main();
+                    break;
+                case "11":
+                    Console.WriteLine("題目11 start ...");
+
+                    EventExercise3 eventExercise3 = new EventExercise3();
+                    eventExercise3.Main();
                     break;
             }
 
