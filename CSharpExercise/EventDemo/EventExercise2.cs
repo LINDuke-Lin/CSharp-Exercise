@@ -33,7 +33,7 @@ namespace CSharpExercise.EventDemo
     public class CatHost
     {
         /// <summary>
-        /// 建構式注入貓咪 並註冊事件
+        /// 建構子注入貓咪 並註冊事件
         /// </summary>
         /// <param name="cat"></param>
         public CatHost(Cat cat)
