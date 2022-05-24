@@ -2,6 +2,7 @@
 
 ## 目錄:
 - [事件練習1 - delegate & event](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#%E4%BA%8B%E4%BB%B6%E7%B7%B4%E7%BF%921)
+- [事件練習2 - 泛型委派(Action)](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#%E4%BA%8B%E4%BB%B6%E7%B7%B4%E7%BF%922---%E6%B3%9B%E5%9E%8B%E5%A7%94%E6%B4%BEaction)
 
 
 ## 事件練習1
