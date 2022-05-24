@@ -160,3 +160,20 @@
 
 
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#event%E4%BA%8B%E4%BB%B6)
+
+## 事件練習3 - 泛型委派(Action) - 匿名函式
+
+- 註冊時使用匿名函式實作
+```CSharp
+	/// <summary>
+	/// 以建構子注入鴨類別，並以匿名函式實作
+	/// </summary>
+	/// <param name="duck"></param>
+	public DuckHost(Duck duck)
+	{
+	    //此處使用匿名函數
+	    duck.AnimalEventHandler += new Action(() => { Console.WriteLine("變烤鴨了"); });
+	}
+```
+
+[回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#event%E4%BA%8B%E4%BB%B6)
