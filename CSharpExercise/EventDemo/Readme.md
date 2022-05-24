@@ -94,3 +94,68 @@
 
 
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#event%E4%BA%8B%E4%BB%B6)
+
+## 事件練習2 - 泛型委派(Action)
+- `Action` & `event`
+
+1. 宣告事件
+- 此處加上泛型委派，就無須另外宣告`delegate`
+```CSharp
+   /// <summary>
+   /// 貓咪泛型事件
+   /// </summary>
+   public event Action AnimalEventHandler;
+```
+
+2. 實現觸發事件的函式
+- 使用`?.Invoke();`
+```CSharp
+	/// <summary>
+	/// 貓咪函式
+	/// </summary>
+	public void OnAlarm()
+	{
+	    Console.WriteLine("喵喵");
+	    AnimalEventHandler?.Invoke();
+	}
+```
+
+3. 實作CatHost類別
+- 將貓類別由建構子注入
+- 並註冊事件
+- 實現事件的函式
+```CSharp
+    public class CatHost
+    {
+        /// <summary>
+        /// 建構子注入貓咪 並註冊事件
+        /// </summary>
+        /// <param name="cat"></param>
+        public CatHost(Cat cat)
+        {
+            cat.AnimalEventHandler += new Action(AlarmHandler);
+        }
+
+        /// <summary>
+        /// 事件處理
+        /// </summary>
+        public void AlarmHandler()
+        {
+            Console.WriteLine("貓來了");
+        }
+    }
+```
+
+4. 主程式
+```CSharp
+	public void Main()
+	{
+	    Cat cat = new Cat();
+	    CatHost catHost = new CatHost(cat);
+	
+	    cat.OnAlarm();
+	}
+```
+
+
+[回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#event%E4%BA%8B%E4%BB%B6)
