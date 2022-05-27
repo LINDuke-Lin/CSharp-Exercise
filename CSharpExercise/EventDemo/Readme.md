@@ -178,3 +178,24 @@
 ```
 
 [回頁首](https://github.com/LINDuke-Lin/CSharp-Exercise/tree/origin/chicken/CSharpExercise/EventDemo#event%E4%BA%8B%E4%BB%B6)
+
+## 事件練習4 - 泛型委派(Func<T>) - 雙事件註冊
+
+- 宣告兩個Func事件
+```CSharp
+	/// <summary>
+	/// 宣告一號雞泛型事件
+	/// </summary>
+	public event Func<string> Chicken1EventHandler;
+	/// <summary>
+	/// 宣告二號雞泛型事件
+	/// </summary>
+	public event Func<string> Chicken2EventHandler;
+```
+
+- 在Host類別建構式中訂閱兩個事件
+- 使用匿名函式傳遞委派
+```CSharp
+	chicken.Chicken1EventHandler += new Func<string>(() => { return "一號雞"; });
+	chicken.Chicken2EventHandler += new Func<string>(() => { return "二號雞"; });
+```
