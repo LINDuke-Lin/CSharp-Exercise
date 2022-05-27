@@ -1,5 +1,6 @@
 ﻿using CSharpExercise.DelegateExercise;
 using CSharpExercise.EventDemo;
+using CSharpExercise.FactoryExercise;
 using CSharpExercise.PrintHello;
 using System;
 
@@ -24,6 +25,7 @@ namespace CSharpExercise
             Console.WriteLine("10. 事件練習 - 泛型委派");
             Console.WriteLine("11. 事件練習 - 泛型委派(匿名函式)");
             Console.WriteLine("12. 事件練習 - 泛型委派(多事件註冊)");
+            Console.WriteLine("13. 工廠練習");
 
 
             Console.WriteLine("請選擇題目:");
@@ -105,6 +107,12 @@ namespace CSharpExercise
 
                     EventExercise4 eventExercise4 = new EventExercise4();
                     eventExercise4.Main();
+                    break;
+                case "13":
+                    Console.WriteLine("題目13 start ...");
+
+                    FactoryExercise1 factoryExercise1 = new FactoryExercise1();
+                    factoryExercise1.Main();
                     break;
             }
 
