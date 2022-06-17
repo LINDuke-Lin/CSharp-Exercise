@@ -2,6 +2,7 @@
 using CSharpExercise.EventDemo;
 using CSharpExercise.FactoryExercise;
 using CSharpExercise.PrintHello;
+using CSharpExercise.TaskExercise;
 using System;
 
 namespace CSharpExercise
@@ -21,11 +22,14 @@ namespace CSharpExercise
             Console.WriteLine("6. 委派練習5(Action 委派(傳參數)) - 馬戲團");
             Console.WriteLine("7. 委派練習6(Func 委派) - 馬戲團");
             Console.WriteLine("8. 委派練習7(Func 委派(傳參數)) - 馬戲團");
+            Console.WriteLine("-- 事件 --");
             Console.WriteLine("9. 事件練習");
             Console.WriteLine("10. 事件練習 - 泛型委派");
             Console.WriteLine("11. 事件練習 - 泛型委派(匿名函式)");
             Console.WriteLine("12. 事件練習 - 泛型委派(多事件註冊)");
             Console.WriteLine("13. 工廠練習");
+            Console.WriteLine("-- 非同步 --");
+            Console.WriteLine("14. 非同步執行常數函式");
 
 
             Console.WriteLine("請選擇題目:");
@@ -113,6 +117,12 @@ namespace CSharpExercise
 
                     FactoryExercise1 factoryExercise1 = new FactoryExercise1();
                     factoryExercise1.Main();
+                    break;
+                case "14":
+                    Console.WriteLine("題目14 start ...");
+
+                    TaskExercise1 taskExercise1 = new TaskExercise1();
+                    taskExercise1.Main();
                     break;
             }
 
